@@ -25,7 +25,7 @@ use app\Models\Product;
 //     return view('index');
 // });
 
-Route::get('/', [HomePageController::class, 'index'])->name('HomePage');
+Route::get('', [HomePageController::class, 'index'])->name('HomePage');
 
 Route::get('/shop', [ShopController::class, 'index'])->name('Shop.index');
 
